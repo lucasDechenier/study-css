@@ -1,0 +1,45 @@
+/*Estamos ulizando um seletor, toda tag h2 será blue */
+h2{
+    color:blue;
+}
+/*Vamos criar um ID para alterar 
+partes específicas do html */
+
+#principal{
+    color:orange;
+}
+
+/*Vamos criar um Class*/
+
+.paragrafo{
+    color:rgb(0, 238, 255);
+}
+
+/*A diferença da class para o ID é que com class podemos 
+utilizar em mais de um elemento*/
+
+/* Como definir as cores
+
+    color:rgb(0-255,0-255,0-255); RGB
+    color:rgba(0-255,0-255,0-1);  RGBA - opacidade
+    color:#ffffff                 Hexadecimal
+*/
+/* modificar background */
+
+#mudarbd{
+    background-color: darkmagenta;
+}
+
+#mudarbdimage{
+    background-image: url(./assets/carro.jpg);
+    background-repeat:repeat-x; /*Define se a imagem vai se repetir ou não */
+    background-size: cover; /* Vai preencher toda a tag */
+    background-attachment: fixed; /*Fixa a imagem, quando rolar a imagem fica fixa*/
+    background-position: center; /*Define a posição da imagem*/
+}
+
+/*Utilizando uma div no html, lembre-se que se você usar uma class ou um id, as coisas podem ser sobrescritas
+a depender da ordem*/
+.usodiv{
+    background-color: darkviolet;
+}
