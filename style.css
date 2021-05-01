@@ -88,9 +88,10 @@ a depender da ordem*/
 }
 /* a unidade vw se refere a porcentagem do valor de largura da janela, 10vw = 10% da largura máxima da janela */
 /* a unidade vh é igual a vw, mas em relação a altura */
-/* vmin irá se referir a menor dimensão da página*/
+/* vmin irá se referir a menor dimensão da página ex 10vmin, 10% do menor elemento*/
 /* vmax é o contrário de vmin */
 /* % se refere a uma % do elemento pai */
+/* em é um multiplo do tamanho da fonte padrão do elemento */
 .inside{
     font-size: 20%;
 

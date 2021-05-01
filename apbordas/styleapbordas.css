@@ -1,0 +1,171 @@
+/*Iniciando os estudos sobre bordas*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.borda{
+    border-width: 5px 2px 10px 20px;
+    border-style: solid;
+    border-color:red;
+    border-radius: 50%;
+    border-top-color: yellow;
+}
+
+.bordasimples{
+    border: 5px dashed orange;
+}
+
+.quadrado{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.dotted{border-style: dotted;}
+.dashed{border-style: dashed;}
+.solid{border-style: solid;}
+.none{border-style: none;}
+.hidden{border-style: hidden;}
+
+/*BOX MODEL content - pading - border - margin */
+.container{
+    background-color: purple;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.content{
+    background-color: yellow;
+    border: 10px solid green;
+    margin: 10px;
+    outline: 5px solid white;
+    padding: 20px;
+}
+
+/* O outline ignora o box model, é como se fosse uma borda por cima */
+.quadrado2{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    border: 10px solid blue;
+}
+
+.quadrado3{
+    width: 120px;
+    height: 120px;
+    background-color: teal;
+}
+
+.quadrado4{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    border: 10px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*Ajustes de texto */
+.texto1{
+    color: yellow;
+    text-align: center;
+}
+
+.texto2{
+    color: red;
+    text-align: justify;
+    text-decoration: underline overline;
+    letter-spacing: 10px;
+}
+
+.texto3{
+    color: green;
+    text-transform: capitalize;
+    text-indent: 40px;
+    line-height: 200%;
+    word-spacing: 20px;
+    text-shadow: 2px 20px 5px black;
+}
+
+#seletora{
+    text-decoration: none;
+}
+/*Família de genéricas de fontes
+Com serifa ou sem serifa
+monospaced - toda letra tem sempre a mesma largura e altura*/
+
+.texto4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 700; /* Pode ser valores de 100 a 900, sempre de 100 em 100*/
+    font-variant: small-caps; /*Propriedade não muito utilizada*/
+}
+
+/*Para utilizar fontes diferentes, vá para o google fonts */
+
+.texto5{
+    color: indigo;
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 45px;
+}
+
+/*Pode Buscar fontes também no dafonts */
+@font-face {
+    font-family: 'Abu';
+    src: url(../fonts/Abu\ Dhabi\ .otf);
+}
+
+.texto6{
+    color: orange;
+    font-family: 'Abu','Dancing Script', 'cursive';
+    font-size: 100px;
+    line-height: 1em;
+}
+
+/*Estilos de link */
+
+.link{
+    text-decoration: none;
+    color: white;
+    cursor: crosshair;
+    background-color: red;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.link:visited{
+    color:orange
+}
+/* Quando o mouse estiver em cima do link */
+.link:hover{
+    background-color: black;
+    color:white
+}
+
+.link:active{
+    background-color: yellow;
+    color: red;
+}
+
+/*Criando estilos em uma lista */
+
+ul{
+    list-style-image: url("../assets/carro.jpg");
+    list-style-position: inside;
+    background-color: royalblue;
+    padding: 10px;
+}
+ol{
+    list-style-type: none;
+}
+li{
+    border: 1px solid black;
+    background-color: violet;
+    margin: 10px;
+    padding: 10px;
+}
