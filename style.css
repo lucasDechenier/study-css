@@ -2,6 +2,8 @@
 h2{
     color:blue;
 }
+
+
 /*Vamos criar um ID para alterar 
 partes específicas do html */
 
@@ -42,4 +44,72 @@ utilizar em mais de um elemento*/
 a depender da ordem*/
 .usodiv{
     background-color: darkviolet;
+}
+
+/* Unidaddes de medida */
+
+#cm{
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+
+#mm{
+    background-color: red;
+    width: 5mm;
+    height: 5mm;
+}
+
+#in{
+    background-color: green;
+    width: 0.5in;
+    height: 0.5in;
+}
+
+#px{
+    background-color: purple;
+    width: 10px;
+    height: 10px;
+}
+
+#pt{
+    background-color: orange;
+    width: 10pt;
+    height: 10pt;
+}
+
+/* Unidades de Medida Relativa */
+
+.container{
+    font-size: 25px;
+
+    width: 10vw;
+    background-color: red;
+}
+/* a unidade vw se refere a porcentagem do valor de largura da janela, 10vw = 10% da largura máxima da janela */
+/* a unidade vh é igual a vw, mas em relação a altura */
+/* vmin irá se referir a menor dimensão da página*/
+/* vmax é o contrário de vmin */
+/* % se refere a uma % do elemento pai */
+.inside{
+    font-size: 20%;
+
+    width: 3em;
+    background-color: blue;
+}
+
+/* o rem vai ser em proporção com o elemento da raiz, no caso a tag html */
+
+/* Margin e Padding */
+
+#base{
+    height: 40px;
+    background-color: red;
+}
+
+#conteudo{
+    background-color: blue;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 20px;
 }
